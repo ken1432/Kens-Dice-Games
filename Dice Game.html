@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://mdmizanur3950.github.io/pig-game/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Dice Game_files/bootstrap.min.css">
+
+    <!-- Font Awesome CDN -->
+    <link href="./Dice Game_files/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Google Fonts Integration -->
+    <link href="./Dice Game_files/css2" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./Dice Game_files/style.css">
+
+    <title>Pig Dice Game</title>
+  </head>
+  <body>
+    <!-- Main Game Section -->
+    <section class="main">  
+      <div class="container">
+        <!-- Main Game Box -->
+        <div class="gameBox">
+          <img src="./Dice Game_files/win.gif" alt="" class="img-fluid win-image"> <!-- Winner Gif File -->
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <!-- Player One Box -->
+              <div class="box boxOne">
+                <h2 class="player" id="playerOne">Player 1<span class="playing"><i class="fa fa-circle"></i></span></h2> 
+                <h1 class="score" id="playerOneScore">0</h1>
+                <div class="currentScoreBox">
+                  <h5>Current Score</h5>
+                  <h4 class="currentScore" id="playerOneCurrentScore">0</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 ">
+              <!-- Button or Game Central Box -->
+              <div class="box boxButton">
+                <!-- New game/Play Again Button -->
+                <div class="form-group mb-5" id="inputs">
+                  <label>Please Set</label>
+                  <input type="text" class="form-control name" id="player1" value="" placeholder="Player 1 Name">
+                  <input type="text" class="form-control name" id="player2" value="" placeholder="Player 2 Name">
+                  <input type="number" class="form-control number" placeholder="Winning Value">
+                  
+                </div>
+
+                <button type="button" class="btn btn-play"><i class="fa fa-plus-circle mr-2"></i>Start Game</button>
+                
+
+                <!-- Loader Gif Image -->
+                <div class="loadingImage" style="display: none;">
+                  <img src="./Dice Game_files/loading.svg" alt="" class="loading">
+                  <img src="./Dice Game_files/loading.svg" alt="" class="loading">
+                </div>
+
+                <!-- Dice Image -->
+                <div class="diceImages">
+                  <img src="https://ken1432.github.io/Dice Game/" alt="" class="img-fluid dice" id="dice1">
+                  <img src="https://ken1432.github.io/Dice Game/" alt="" class="img-fluid dice" id="dice2">
+                </div>
+
+                <!-- Roll Dice Button -->
+                <button class="btn btn-roll" style="bottom: 0px;"><i class="fa fa-repeat mr-2"></i>Roll Dice</button>
+
+                <!-- Save Score Button -->
+                <button class="btn btn-save" style="bottom: 0px;"><i class="fa fa-download mr-2"></i>Save Score</button>
+
+              </div>
+            </div>
+            <div class="col-md-5">
+              <!-- Player Two Box -->
+              <div class="box boxTwo">
+                <h2 class="player" id="playerTwo">Player 2<span class="playing"><i class="fa fa-circle"></i></span></h2> 
+                <h1 class="score" id="playerTwoScore">0</h1>
+                <div class="currentScoreBox">
+                  <h5>Current Score</h5>
+                  <h4 class="currentScore" id="playerTwoCurrentScore">0</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About the Game Button and Modal -->
+    <div class="btn btn-success btn-sm" data-toggle="modal" data-target="#gameInfo">About The Game</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="gameInfo">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome to "Pig Dice Game" info center</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-4">The objective of <strong>Pig Dice Game</strong> is to score more or equal to the winning points before the opponent does.</p>
+            <h5 class="mb-3">Game Rules:</h5>
+            <p mb-2="">Each turn the player rolls two dice. If the player gets 1 on any of the dice he earns nothing and another player gets his turn. On getting 2-6 on the dice, player's sum is being added to his current score, until he decides to save his current score. If the player saves his score, the other player gets his turn.</p>
+            <p>The player who got winning score which you can initially set before the oppponent wins the game.</p>
+            <h6>Enjoy!</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./Dice Game_files/jquery.min.js.download"></script>
+    <script src="./Dice Game_files/popper.min.js.download"></script>
+    <script src="./Dice Game_files/bootstrap.min.js.download"></script>
+
+    <!-- Custom JS -->
+    <script src="./Dice Game_files/app.js.download"></script>
+  
+
+</body></html>
